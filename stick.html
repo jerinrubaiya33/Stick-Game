@@ -1,0 +1,91 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frog Leap</title>
+    <link rel="stylesheet" href="stick.css">
+</head>
+<body>
+<div class="container">
+    <div id="score"></div>
+    <canvas id="game" width="375" height="375"></canvas>
+    <div id="introduction">Hold down the mouse to stretch the frog's tongue</div>
+    <div id="perfect">DOUBLE SCORE</div>
+    <button id="restart">RESTART</button>
+</div>
+</body>
+<script src="stick.js"></script>
+</html>
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Cute Girl Lily Pad Jump</title>
+     <style>
+         body {
+             margin: 0;
+             padding: 0;
+             overflow: hidden;
+             font-family: Arial, sans-serif;
+         }
+         #gameCanvas {
+             position: absolute;
+             top: 0;
+             left: 0;
+         }
+         #score {
+             position: absolute;
+             top: 20px;
+             right: 20px;
+             font-size: 24px;
+             color: #fff;
+             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+         }
+         #introduction {
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             font-size: 24px;
+             color: #fff;
+             text-align: center;
+             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+         }
+         #perfect {
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             font-size: 40px;
+             color: #FFD700;
+             opacity: 0;
+             transition: opacity 0.5s;
+             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+         }
+         #restart {
+             position: absolute;
+             top: 60%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             font-size: 24px;
+             padding: 10px 20px;
+             background-color: #4CAF50;
+             color: white;
+             border: none;
+             cursor: pointer;
+             display: none;
+         }
+     </style>
+ </head>
+ <body>
+     <canvas id="gameCanvas"></canvas>
+     <div id="score">0</div>
+     <div id="introduction">Hold and release to jump!</div>
+     <div id="perfect">PERFECT!</div>
+     <button id="restart">Restart</button>
+     <script src="stick.js"></script>
+ </body>
+ </html>
